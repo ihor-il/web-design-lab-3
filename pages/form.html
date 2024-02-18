@@ -10,9 +10,98 @@
     </head>
     <body>
         <h1>Лупина Ігор Ігорович</h1>
-		<h2>Приклади використання форм</h2>
+        <h2>Приклади використання форм</h2>
+        <form>
+            <fieldset>
+                <legend>Особиста інформація</legend>
+                <label for="userName">Ім'я:</label>
+                <input
+                    type="text"
+                    name="userName"
+                    placeholder="Введіть своє ім'я"
+                    id="userName"
+                />
+                <br />
+                <br />
+
+                <label for="userAge">Вік:</label>
+                <input
+                    type="number"
+                    name="userAge"
+                    placeholder="Введіть ваш вік"
+                    id="userAge"
+                    min="1"
+                    max="5"
+                />
+                <br />
+                <br />
+
+                <label>Стать:</label><br />
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    id="male"
+                />
+                <label for="male">Чоловіча</label>
+                <br />
+                <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    id="female"
+                />
+                <label for="female">Жіноча</label>
+                <br />
+                <br />
+
+                <label for="city">Місто:</label>
+                <select
+                    name="city"
+                    id="city"
+                >
+                    <option value="kyiv">Київ</option>
+                    <option value="odesa">Одеса</option>
+                    <option value="lviv">Львів</option>
+                    <option value="kharkiv">Харків</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="password">Пароль</label>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Введіть пароль"
+                    id="password"
+                />
+
+                <input
+                    type="checkbox"
+                    name="remember"
+                    id="remember"
+                />
+                <label for="remember">Запам'ятати мене</label>
+                <br />
+                <br />
+                <label for="message">Повідомлення:</label>
+                <textarea
+                    name="message"
+                    id="message"
+                ></textarea>
+            </fieldset>
+
+            <br />
+            <input
+                type="button"
+                name="submit"
+                value="Зареєструватися"
+            />
+        </form>
+        <br />
+        <br />
     </body>
-	<footer>
-		<a href="../index.html">Домашня сторінка</a>
-	</footer>
+    <footer>
+        <a href="../index.html">Домашня сторінка</a>
+    </footer>
 </html>
