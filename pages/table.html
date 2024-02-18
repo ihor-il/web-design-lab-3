@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+    <head>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Lab 3</title>
+    </head>
+    <body>
+        <h1>Лупина Ігор Ігорович</h1>
+        <h2>Приклади використання таблиць</h2>
+        <table>
+            <caption>
+                Заголовок таблиці (тег &lt;caption&gt;)
+            </caption>
+            <thead>
+                <tr>
+					<td>&lt;thead&gt;</td>
+                    <td>Заголовок стовпця 1</td>
+                    <td colspan="2">Заголовок стовпців 2 та 3</td>
+                    <td>Заголовок стовпця 4</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+					<td rowspan="2">&lt;tbody&gt;</td>
+                    <td>1-1</td>
+                    <td>2-1</td>
+                    <td>3-1</td>
+                    <td>4-1</td>
+                </tr>
+                <tr>
+                    <td>1-2</td>
+                    <td>2-2</td>
+                    <td>3-2</td>
+                    <td>4-2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+					<td>&lt;tfoot&gt;</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
 
+    <span>
+        Семантично заголовки таблиць позначаються тегом &lt;thead&gt;,<br />
+        тіло - тегом &lt;tbody&gt;,<br />
+        підпис - тегом &lt;tfoot&gt; <br>
+        ряди - тегом &lt;tr&gt; <br>
+        клітинки - тегом &lt;td&gt;
+    </span>
+	<br>
+	<br>
+    <footer>
+        <a href="../index.html">Домашня сторінка</a>
+    </footer>
+</html>
